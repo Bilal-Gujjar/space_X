@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useLaunchProfileQuery } from '../../generated/graphql';
 import LaunchProfile from './LaunchProfile';
-
+import logo from "../LaunchList/loading.gif";
 interface OwnProps {
   id: number;
 }
@@ -15,7 +15,9 @@ const LaunchProfileContainer = ({ id }: OwnProps) => {
   }, [id]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>
+      
+    </div>;
   }
 
   if (error) {
