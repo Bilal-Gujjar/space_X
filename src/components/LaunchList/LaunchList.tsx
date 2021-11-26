@@ -14,7 +14,7 @@ const className = 'LaunchList';
 
 const LaunchList: React.FC<Props> = ({ data, handleIdChange }) => (
   <div className={className}>
-    <h3>Launches</h3>
+    <h3 style={{fontSize:"40px"}}>Launches</h3>
     <ol className={`${className}__list`}>
       {!!data.launches &&
         data.launches.map(
